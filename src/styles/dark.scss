@@ -1,0 +1,110 @@
+@import 'colors';
+.dark {
+  background-color: $dark;
+  .header {
+    background-color: $heavy-dark;
+    box-shadow: 0 2px 10px $light-dark;
+  }
+  .sidebar {
+    background-color: $heavy-dark;
+    box-shadow: 2px 10px 10px $light-dark;
+  }
+  .bell, .menu, .moon {
+    color: $white;
+  }
+  p, span, h1, h2, h3, h4, h5, h6, div, b {
+    color: $white;
+  }
+  .logo {
+    filter: invert(0);
+  }
+  .p-toast {
+    opacity: 0.9;
+  }
+  .p-toast .p-toast-message {
+    margin: 0 0 1rem 0;
+    box-shadow: none;
+    border-radius: 6px;
+  }
+  .p-toast .p-toast-message .p-toast-message-content {
+    padding: 1.143rem 1.357rem;
+    border-width: 0 0 0 20px;
+  }
+  .p-toast .p-toast-message .p-toast-message-content .p-toast-message-text {
+    margin: 0 0 0 1rem;
+  }
+  .p-toast .p-toast-message .p-toast-message-content .p-toast-message-icon {
+    font-size: 1.286rem;
+  }
+  .p-toast .p-toast-message .p-toast-message-content .p-toast-summary {
+    font-weight: 400;
+  }
+  .p-toast .p-toast-message .p-toast-message-content .p-toast-detail {
+    margin: 0.5rem 0 0 0;
+  }
+  .p-toast .p-toast-message .p-toast-icon-close {
+    width: 1.286rem;
+    height: 1.286rem;
+    border-radius: 50%;
+    background: transparent;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+  }
+  .p-toast .p-toast-message .p-toast-icon-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  .p-toast .p-toast-message .p-toast-icon-close:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: none;
+  }
+  .p-toast .p-toast-message.p-toast-message-info {
+    background: $black;
+    border: solid $purple;
+    opacity: 0.05;
+    border-width: 0 0 0 20px;
+    color: $white;
+  }
+  .p-toast .p-toast-message.p-toast-message-info .p-toast-message-icon,
+  .p-toast .p-toast-message.p-toast-message-info .p-toast-icon-close {
+    color: $white;
+  }
+  .p-toast .p-toast-message.p-toast-message-success {
+    background: $black;
+    opacity: 0.05;
+    border: solid $green;
+    border-width: 0 0 0 20px;
+    color: $white;
+  }
+  .p-toast .p-toast-message.p-toast-message-success .p-toast-message-icon,
+  .p-toast .p-toast-message.p-toast-message-success .p-toast-icon-close {
+    color: $white;
+  }
+  .p-toast .p-toast-message.p-toast-message-warn {
+    background: $black;
+    border: solid $yellow;
+    opacity: 0.05;
+    border-width: 0 0 0 20px;
+    color: $white;
+  }
+  .p-toast .p-toast-message.p-toast-message-warn .p-toast-message-icon,
+  .p-toast .p-toast-message.p-toast-message-warn .p-toast-icon-close {
+    color: $white;
+  }
+  .p-toast .p-toast-message.p-toast-message-error {
+    background: $black;
+    border: solid $red;
+    opacity: 0.05;
+    border-width: 0 0 0 20px;
+    color: $white;
+  }
+  .p-toast .p-toast-message.p-toast-message-error .p-toast-message-icon,
+  .p-toast .p-toast-message.p-toast-message-error .p-toast-icon-close {
+    color: $white;
+  }
+
+  .p-inputtext {
+    background-color: $heavy-dark;
+    color: $white;
+    border-color: $light-dark
+  }
+}

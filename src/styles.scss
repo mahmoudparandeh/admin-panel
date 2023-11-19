@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import './styles/light';
+@import './styles/dark';
+@import './styles/utils';
+@import './styles/rtl';
+@import './styles/ltr';
+
+body {
+  margin: 0;
+}

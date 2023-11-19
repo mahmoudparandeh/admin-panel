@@ -1,0 +1,19 @@
+<div class="center">
+  <div class="card">
+   <form [formGroup]="loginForm" class="flex flex-column">
+     <div class="flex flex-column">
+       <input type="text" pInputText formControlName="username" />
+       @if (loginForm.controls.username.errors && loginForm.controls.username.touched) {
+       <small class="mt-1 p-error">Username is required</small>
+       }
+     </div>
+     <div class="flex flex-column p-fluid mt-3">
+       <p-password formControlName="password" [feedback]="false" styleClass="w-full"></p-password>
+       @if (loginForm.controls.password.errors && loginForm.controls.password.touched) {
+       <small class="mt-1 p-error">Password is required</small>
+       }
+     </div>
+     <p-button label="Login" class="mt-3" [disabled]="loginForm.invalid" (onClick)="login()" [loading]="((loading$ | async) ?? false)"></p-button>
+   </form>
+  </div>
+</div>

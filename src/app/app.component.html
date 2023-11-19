@@ -1,0 +1,8 @@
+@if (isAuthenticated) {
+  <app-header></app-header>
+  <app-sidebar></app-sidebar>
+}
+<main [ngClass]="isAuthenticated ? 'main' : 'p-0'">
+  <router-outlet></router-outlet>
+</main>
+<p-toast key="toast"></p-toast>

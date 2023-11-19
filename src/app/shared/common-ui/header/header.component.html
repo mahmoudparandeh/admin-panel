@@ -1,0 +1,11 @@
+<header class="header">
+  <div class="flex align-items-center">
+    <fa-icon [icon]="faBars" [size]="'xl'" class="menu pointer"></fa-icon>
+    <img ngSrc="assets/images/logo.png" alt="logo" height="48" width="127" class="logo ml-2" priority="1">
+  </div>
+  <div class="flex align-items-center">
+    <fa-icon [icon]="faBell" [size]="'xl'" class="bell pointer"></fa-icon>
+    <p-inputSwitch [(ngModel)]="darkMode" (onChange)="setTheme()" class="ml-4"></p-inputSwitch>
+    <fa-icon [icon]="darkMode ? faMoon : faSun" [size]="'xl'" class="ml-2" [ngClass]="darkMode ? 'moon' : 'sun'"></fa-icon>
+  </div>
+</header>
